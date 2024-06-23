@@ -5,16 +5,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing-page-03</title>
     <style>
-     
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .cabeçalho{
+        display: flex;
+        background-color: #004E71;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height:  60px
+      }
+      .cabeçalho-1{
+          display: flex;
+         padding-left: 17px;
+         gap: 14px;
+          width: 40%;
+          align-items: center;
+          
+   
+        height: 45px;
+          
+      }
+      .cabeçalho-1{
+        #titulo{
+            font-weight: bold;
+            font-size: 27px;
+        }
+      } 
+      .cabeçalho-2{
+        border: 1px solid white;
+    
+        width: 250px;
+        margin-right: 30px;
+        text-align: center;
+        padding: 5px;
+        background-color: #E87C25;
+      }
+      .cv{
+        display: flex;
+        align-items: end;
+ 
+        height: 25px;
+      }
+      .conteudo-01{
+       background-color: #EAEFF1;
+       height: 350px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: #55bbe7;
+    
+      }
+      .conteudo-01 h1{
+            color: #094F71;
+            
+      }
+   
+      .descricao-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+        width: 50%;
+        height: 70%;
+        grid: 45px;
+      }
+      .texto-marcado{
+        font-weight: bold;
+        color: #094F71;
+      }
+      .descricao-texto p{
+        font-size: 20px;
+        
+    
+      }
+      .secao-2{
+        padding: 15px;
+        background-color: #0077F9;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .p-secao-2{
+        color: white;
+      }
+      .text{
+        font-size: 25px;
+      }
+      .secao-2 button{
+        background-color: white;
+        border: none;
+        padding: 15px;
+      }
+      #secao-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 340px;
+        padding: 45px;
+        gap: 10px;
+       
+
+      }
+      .secao-3-descricao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        gap: 15px;
+        text-align: center;
+        color: #0F4F6F;
+        
+      }
+      .test{
+        font-weight: bold;
+        color: #094F71;
+        font-size: 25px;
+        text-align: center;
+
+      }
+      .caixas{
+        width: 750px;
+      
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        gap: 10px;
+      }
+      .caixao-alguma{
+        border: 1px solid #0F4F6F;
+        text-align: center;
+        width: 120px;
+        padding: 10px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+       
+      }
+      .algo{
+        width: 250px;
+      }
+      .secao-4{
+        display: flex;
+        background-color: #0077F9;
+        height: 250px;
+        padding-left: 150px;
+        align-items: center;
+      }
+      .linha{
+        border-left: 2px solid white;
+        height: 250px;    
+    
+    }
+    .secao-4-1{
+        margin: 20px;
+    }
+    .secao-4-2{
+        text-align: left;
+        padding-left: 15px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        letter-spacing: 1px;
+    }
+    .lista{
+        list-style: none;
+        color: white;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        background-color: #094F71;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 10px;
+        gap: 2px;
+    }
+    img{
+        width: 350px;
+    }
     </style>
 </head>
 <body>
     <div class="cabeçalho">
-        <div>
+        <div class="cabeçalho-1">
             <p id="titulo">unbounce</p>
-            <p>The Unbounce Landing Page Course</p>
+            <p class="cv">The Unbounce Landing Page Course</p>
         </div>
-        <div>
+        <div class="cabeçalho-2">
             <p>PREVIEW THE UNBOUNCE LANDING PAGE BUILDER</p>
         </div>
     </div>
@@ -22,10 +217,10 @@
 
     <div class="conteudo-01">
         <div class="descricao-texto">
-            <h1>Welcome to the Unbounce Landing Page Couse</h1>
-            <p>in this actionabke couser, landing oage expert Oli Gardner
-                will walk you through hoe tto create hing-converting landing pages.
-                Follow along with steeo0by-steo instructiona videos to
+            <h1>Welcome to the<br> Unbounce Landing Page Couse</h1>
+            <p>In this actionabke couser, landing oage expert Oli Gardner<br>
+                will walk you through hoe tto create hing-converting landing<br> pages.
+                Follow along with steeo0by-steo instructiona videos to<br>
                 help you create your own landing pages as you go
             </p>
             <p>Comming soon the <span class="texto-marcado"> Unbounce Certified Landing Page Expert program</span></p>
@@ -33,13 +228,13 @@
         </div>
 
         <div class="descricao-img">
-            <img src="" alt="imagem  homem careca blusa preta ">
+            <img src="download-removebg-preview.png" alt="imagem  homem careca blusa preta ">
         </div>
     </div>
 
 
     <div class="secao-2">
-        <p class="p-secao-2">Get Higher Conversions From Your Landing Pages</p>
+        <p class="p-secao-2 text">Get Higher Conversions From Your Landing Pages</p>
         <button>START THE COURSE NOW</button>
         <p class="p-secao-2">(Or navgate using the menu on the left)</p>
 
@@ -47,11 +242,11 @@
 
     <div id="secao-3">
         <div class="secao-3-descricao">
-            <p class="p-secao-3">Unlock the Conversion Benchmark Report By
+            <p class="p-secao-3 test">Unlock the Conversion Benchmark Report By<br>
                 chosing your industry category below
             </p>
-            <p class="p-secao-3">For the firs time ever,a group of data scientists and conversion optimization experts
-                used Ai techlody to analyze the actions of 74.551.421 visitors on 64.284
+            <p class="p-secao-3">For the firs time ever,a group of data scientists and conversion optimization<br>
+                experts used Ai techlody to analyze the actions of 74.551.421 visitors on 64.284<br>
                 lead gen landing pages created in the Unbounce platorm
             </p>
         </div>
@@ -66,25 +261,28 @@
             <div class="caixao-alguma"> real estate</div>
             <div class="caixao-alguma"> travel</div>
             <div class="caixao-alguma"> vocational studies & job trainig</div>
-            <div class="caixao-alguma"></div>
+            <div class="caixao-alguma algo">other: my industry isn`t listed</div>
         </div>
 
        
     </div>
 
     <div class="secao-4">
-        <div>
-            <ul>
+        <div class="secao-4-1">
+            <ul class="lista">
                 <li>What is a Landing Page?</li>
                 <li>Landing Page vs Homepage</li>
                 <li>Why Should l User Landing Pages ?</li>
                 <li>Why Are Landing Pages Great for PPC?</li>
-                <li></li>
+                
             </ul>
         </div>
-        <div>
-            <h2>GOT QUUSTIONS ABOUT LANDING PAGES</h2>
-            <h3><< CLICK LEFT!</h3>
+
+        <div class="linha">.</div>
+
+        <div class="secao-4-2">
+            <h2>GOT QUUSTIONS<br> ABOUT LANDING<br> PAGES</h2>
+            <h5><< CLICK LEFT!</h5>
         </div>
     </div>
 
